@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,83 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.container { 
+  margin-top: 10px;
+  width: 50vw;
+  height: 5em;   
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.inputlabel {
+  margin-top: 2.5em;  
+  display: flex;
+  flex-direction: column;  
+}
+
+.forinput {
+  padding: 1.6em;  
+  border-radius: 2px;
+  width: 10vw;
+  height: 0.005em;
+  margin-top: 0.8em
+}
+
+.forlabel {
+  margin-left: 3vw;
+  margin-bottom: 1.5vw;  
+  font-size: calc(6px + 1vmin);
+}
+
+form button {
+  height: 3.5em;
+  width: 12vw;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: white;
+}
+
+.clocks {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.clock {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%; 
+  border-style: inset;
+  /* display:table-cell; */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 11vw;     
+}
+
+.clockandbutton {
+  display: flex;
+  flex-direction: row;
+}
+
+.clockbutton {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%; 
+  border-style: solid;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2vw; 
+  padding-right: 2vw;    
+}
+
+.icon {
+  height: 1.8vw;
+  width: 1.8vw;
 }

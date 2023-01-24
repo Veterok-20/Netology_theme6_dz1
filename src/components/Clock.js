@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
+import XMark from "./XMark";
 
 
 export default function Clock(props) {
-    const { hours, minutes, seconds, getDestinationZoneTime } = props;
-    
-    useEffect(() => {
-        let tick = setInterval(getDestinationZoneTime, 1000);
-        tick(); 
-        return () => {
-            clearInterval(tick);
-        }
-    });    
-    
-    
+    const { hours, minutes, seconds } = props;
+    const { handleDelete, name, k} = props;
 
     return (
-        <div>
-            {hours}:{minutes}:{seconds}
+        <div className="inputlabel">
+            <label className="forlabel">{name}</label>
+            <div className="clockandbutton">
+                <div className="clock">
+                    {hours}:{minutes}:{seconds}
+                </div>
+                <button className="clockbutton" onClick={(e) => handleDelete(e, k)}>
+                    <XMark />
+                </button>
+            </div>
         </div>
     )
-}
+} 
